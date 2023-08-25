@@ -1,5 +1,5 @@
 """
-Proyecto Python
+Proyecto Python - Sebastián Pérez A01707346
 El programa realiza preguntas las cuales te ayudaran a sacar la mejor opcion de ropa.
 Al final del programa tu outfit sera revelado.
 """
