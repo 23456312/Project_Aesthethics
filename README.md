@@ -1,2 +1,2 @@
 # Project_Aesthethics
-Proyecto para poder escoger tu aesthetic dependiendo la temporada del año
+Un proyecto que te ayuda a escoger tu estetica del año
