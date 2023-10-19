@@ -1,4 +1,15 @@
 
+import datetime
+
+current_time = datetime.datetime.now()
+print("Tu, Aesthethic esta siendo elaborada en:", current_time)
+"""
+El nombre del programa "Project Aesthetics"
+Elaborado por Sebastian Perez
+Finalizado el 19/10/23
+Trata de un programa que te da un porcentaje
+para la aesthetic selecionada
+"""
 ext_values = 0
 tops_values = 0
 accs_values = 0
@@ -59,8 +70,12 @@ def tops_final(decision, decision_2):
     """
     Uso de (funciones, condicionales, listas, listas anidadas)
     La funcion tops_final recibe decision o decision_2 y la
-    transforma en la top especifica. Devuelve. estilo de
-    Top
+    transforma en la top especifica.
+    Recibe decisión que es un int que representa la decision de
+    la estacion del año en este caso invierno escogida.
+    Recibe decision_2 que es un int que representa la decision
+    de la estacion del año en este caso verano escogida
+    devuelve un int que representa la top selecionada.
     """
     print(("¿Que tipo de top usarías?"))
     
@@ -99,7 +114,10 @@ def bottoms(top_inv_v1):
     Uso de (funciones, condicionales, listas)
     La funcion bottoms recibe top_inv_v1 o sea la top de la pregunta
     pasada y la transforma en un bottom dependiendo de la opcion.
-    Devuelve estilo de Bottom
+    Recibe top_inv_v1 que es un int que representa la decision de
+    la top escogida.
+    Devuelve un int que representa el numero escogido
+    para el bottom.
     """
     if top_inv_v1 ==1:
         bottom_inv = 0
@@ -128,7 +146,11 @@ def accessories(bottom_inv):
     Uso de (funciones, condicionales, listas, listas anidadas, ciclos)
     La funcion accessories recibe bottom_inv o sea el bottom de la
     pregunta pasada y la transforma en un accesorio dependiendo
-    de la opcion. Devuelve estilo de accesorio
+    de la opcion.
+    Recibe bottom_inv que es un int que representa la decision del
+    bottom escogida.
+    Devuelve un int que representa el numero escogido
+    para el accesorio.
     """
     if bottom_inv in (0,1,2):
         print("Muy bien! \n¿Que tipo de accesorio usarías?")
@@ -204,7 +226,11 @@ def exterior(accesor):
     Uso de (funciones, condicionales, listas, listas anidadas)
     La funcion exterior recibe accesor o sea el accesorio de la
     pregunta pasada y la transforma en un prenda exterior dependiendo
-    de la opcion. Devuelve estilo de prenda de exterior
+    de la opcion.
+    Recibe accesor que es un int que representa la decision del
+    accesorio escogida.
+    Devuelve un int que representa el numero escogido
+    para el la prenda exterior.
     """
     if accesor in (1,5):
         accs_value = 0
@@ -263,14 +289,23 @@ def exterior(accesor):
     else:
         print("Not available, sorry :(")
        
-def final(ext,ext_values,top_inv_v1,accs_values):
+def final(ext,ext_values,top_inv_v1):
     """
     Uso de (funciones, condicionales, operadores)
     La funcion final recibe ext,ext_values,top_inv_v1,accs_values
     o sea valores asignados por la aesthetic de las 
     preguntas pasadas y la transformas en un un numero que
     posteriormente los suma para dar el porcentaje final
-    de la aesthetic obtenida. Devuelve el porcentaje
+    de la aesthetic obtenida.
+    Recibe ext que es un int que representa el valor de las
+    prendas de exterior.
+    Recive la variable de ext_values y la transforma en el
+    valor de las prendas de exterior.
+    Recibe top_inv_1 que es un int que representa el valor
+    escogido para la prenda "top".
+    Devuelve un int que representa el valor escogido
+    para el la prenda exterior y las "tops".
+    
     """
     if ext in (1,2,3):
         ext_values = 35
@@ -290,7 +325,7 @@ bottom_choice = bottoms(top_choice)
 accesor_choice = accessories(bottom_choice)
 exterior_choice = exterior(accesor_choice)
 ext_values, top_values = final(exterior_choice,ext_values,
-                               top_choice,accs_values)
+                               top_choice)
 
 
 
