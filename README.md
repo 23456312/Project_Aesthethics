@@ -5,7 +5,7 @@ Project Aesthetics es un programa que te permite crear outfits basados en una es
 Una vez que el usuario ha elegido los artículos que conforman su outfit, el programa compila y muestra el conjunto completo. Luego, realiza una evaluación y proporciona un porcentaje que representa qué tan cerca se encuentra el outfit de la estética seleccionada. Este porcentaje se calcula comparando las elecciones de ropa del usuario con una referencia de la estética específica. 
 
 # Problematica
-Debido a que hoy en día se presentan muchos casos en los que muchas personas que no se saben como vestir y no saben como mejorar su estilo, este programa te ayudaría a mejorar tu esyilo o minimo saber por donde empezar.
+Debido a que hoy en día se presentan muchos casos en los que muchas personas que no se saben como vestir y no saben como mejorar su estilo, este programa te ayudaría a mejorar tu estilo o te ayuda a saber  minimo  por donde empezar para elaborar un outfit de profesional.
 
 # Library
 
