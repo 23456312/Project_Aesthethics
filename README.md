@@ -9,4 +9,4 @@ En la actualidad, existe una creciente necesidad de proporcionar orientación y 
 
 # Library
 
-La libreria utilizada es datetime la cual hace como dice el nombre nos da el die y el timepo, debido a que queria implementar la hora que la persona esta realizando el programa, dicho libreria no tiene efecto en más, pero le dice al usuarío sy hora y día que esta realizando el programa.
+La libreria utilizada es datetime la cual hace como dice el nombre nos da el dia y el timepo, la utilización de dicha libreria es minima debido a que no tiene un grande proposito en el programa. Dicha libreria esta implementaba al inicio del codigo y su proposito principal es decir la hora y el tiempo en el que se esta utilizando dicha libreria.
